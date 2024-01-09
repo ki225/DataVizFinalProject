@@ -1,12 +1,12 @@
 let radarchart = document.getElementById('radarchart');
 
-d3.json('db_server/db.json').then(
+d3.json('nm_graph/db_server/db.json').then(
     res=>{
-        get_json_data(res)
+        get_json_radardata(res)
     }
 );
 
-function get_json_data(ddd){
+function get_json_radardata(ddd){
     var rows = ddd.records;
 
     //廟口夜市
@@ -738,39 +738,41 @@ function get_json_data(ddd){
     trace_Taitung.r = [tidy / num, food / num, price / num, traffic / num, ent / num, tidy / num];
 
     //
-    let data =[];
-    data.push(trace_Miaokou);
-    data.push(trace_Shilin);
-    data.push(trace_Ningxia);
-    data.push(trace_Nanya);
-    data.push(trace_Linjiang);
-    data.push(trace_HuaxiStreet);
-    data.push(trace_Raohe);
-    data.push(trace_Taoyuan);
-    data.push(trace_Zhongyuan);
-    data.push(trace_Zhongli);    
-    data.push(trace_ChenghuangTemple);
+    let radardata =[];
+    radardata.push(trace_Miaokou);
+    radardata.push(trace_Shilin);
+    radardata.push(trace_Ningxia);
+    radardata.push(trace_Nanya);
+    radardata.push(trace_Linjiang);
+    radardata.push(trace_HuaxiStreet);
+    radardata.push(trace_Raohe);
+    radardata.push(trace_Taoyuan);
+    radardata.push(trace_Zhongyuan);
+    radardata.push(trace_Zhongli);    
+    radardata.push(trace_ChenghuangTemple);
 
-    data.push(trace_Yizhong);
-    data.push(trace_Fengchia);
-    data.push(trace_Jingcheng);
-    data.push(trace_Longden);
-    data.push(trace_Huwei);
-    data.push(trace_Caoxiedun);
+    radardata.push(trace_Yizhong);
+    radardata.push(trace_Fengchia);
+    radardata.push(trace_Jingcheng);
+    radardata.push(trace_Longden);
+    radardata.push(trace_Huwei);
+    radardata.push(trace_Caoxiedun);
 
-    data.push(trace_Chialehu);
-    data.push(trace_Wenhua);
-    data.push(trace_Flower);
-    data.push(trace_Ruifeng);
-    data.push(trace_Liuhe);
-    data.push(trace_KentingStreet);
+    radardata.push(trace_Chialehu);
+    radardata.push(trace_Wenhua);
+    radardata.push(trace_Flower);
+    radardata.push(trace_Ruifeng);
+    radardata.push(trace_Liuhe);
+    radardata.push(trace_KentingStreet);
 
-    data.push(trace_Luodong);
-    data.push(trace_Dongdaemun);
-    data.push(trace_Taitung);
+    radardata.push(trace_Luodong);
+    radardata.push(trace_Dongdaemun);
+    radardata.push(trace_Taitung);
 
-    let layout = {
-        title:"夜市戰力指數",
+    let radarlayout = {
+        width: 1300, // 設置寬度
+        height: 600,
+        
         updatemenus: [       
             {
                 y: 1,
@@ -948,5 +950,5 @@ function get_json_data(ddd){
         startangle: 18,
     };
 
-    Plotly.newPlot(radarchart, data, layout);
+    Plotly.newPlot(radarchart, radardata, radarlayout);
 }

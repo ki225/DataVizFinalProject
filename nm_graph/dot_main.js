@@ -1,16 +1,15 @@
-
 let dotchart = document.getElementById('dotchart');
 
 
 
-d3.json('db_server/db.json').then(
+d3.json('nm_graph/db_server/db.json').then(
     res=>{
-        get_json_data(res)
+        get_json_dotdata(res)
         console.log("rows")
     }
 );
 
-function get_json_data(ddd){
+function get_json_dotdata(ddd){
     var rows = ddd.records;
     console.log(rows)
     
@@ -85,17 +84,12 @@ function get_json_data(ddd){
         }
     };
       
-    let data =[];
-    data.push(trace1);
+    let dotdata =[];
+    dotdata.push(trace1);
     console.log(trace1);
 
-    let layout = {
-        title: '夜市拜訪人數',
-        titlefont :{
-            family: 'Arial',
-            size :30,
-            color : 'rgb(0,0,0)'
-        },
+    let dotlayout = {
+        
         xaxis: {
             //linecolor: 'rgb(31,5,120)',
             tickfont:{
@@ -111,10 +105,10 @@ function get_json_data(ddd){
             }
         },
         showlegend: false,
-        width: 2000,
-        height: 1100,
+        width: 1300,
+        height:600,
         
     };
 
-    Plotly.newPlot(dotchart, data, layout);
+    Plotly.newPlot(dotchart, dotdata, dotlayout);
 }

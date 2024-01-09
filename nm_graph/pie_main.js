@@ -3,14 +3,14 @@ let piechart = document.getElementById('piechart');
 
 
 
-d3.json('db_server/db.json').then(
+d3.json('nm_graph/db_server/db.json').then(
     res=>{
-        get_json_data(res)
+        get_json_piedata(res)
         console.log("rows")
     }
 );
 
-function get_json_data(ddd){
+function get_json_piedata(ddd){
     var rows = ddd.records;
     console.log(rows)
 
@@ -41,7 +41,7 @@ function get_json_data(ddd){
     console.log("point", point)
 
 
-    var data = [{
+    var pieldata = [{
         values: point,
         labels: trait_chinese,
         marker: {
@@ -61,11 +61,11 @@ function get_json_data(ddd){
         textinfo: 'none'
     }];
 
-    var layout = {
-        height: 2000,
-        width: 1100,
+    var pielayout = {
+        width: 1300,
+        height: 700,
         //grid: {rows: 2, columns: 2}
     };
     
-    Plotly.newPlot(piechart, data, layout);
+    Plotly.newPlot(piechart, pieldata, pielayout);
 }
