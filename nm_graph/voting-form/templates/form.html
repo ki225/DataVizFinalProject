@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="section-title">
+        <style>
+          body {
+            font-family: 'Times New Roman', DFKai-sb;
+            background-image: url('/static/assets/img/market.jpg');
+            text-align: center;
+          }
+          h1 {
+            font-family: DFKai-sb;
+          }
+          h2 {
+            font-family: DFKai-sb;
+          }
+          h3 {
+            font-family: DFKai-sb;
+          }
+          h4 {
+            font-family: DFKai-sb;
+          }
+          form 
+          {
+            background-image: url('/static/assets/img/white.jpg');
+            /* 可以調整表單背景圖片的其他屬性 */
+            background-repeat: no-repeat;
+            background-size: cover; /* 填滿整個表單 */
+            padding: 20px; /* 這只是為了示例，添加填充以顯示背景 */
+            text-align: center; /* 將表單置中 */
+            margin: 0 auto; /* 讓表單置中 */
+            width: 60%; /* 設定表單寬度 */
+          }
+        </style>
+        <form action="/submit" method="POST" role="form">
+          <h1>問卷調查</h1>
+          <h2>性別</h2> 
+          <label for="sex"></label>
+          <input type="radio" id="gender" name="gender" value="Male" ><label for="Male">男生</label>
+          <input type="radio" id="gender" name="gender" value="Female" ><label for="Female">女生</label>
+          <input type="radio" id="gender" name="gender" value="Unknown"><label for="Unknown">不願透露</label>
+          <br><br>
+
+          <h2>年齡</h2>
+          <label for="age"></label>
+          <input type="radio" id="age" name="age" value="5"><label for="5">0~10</label>
+          <input type="radio" id="age" name="age" value="15"><label for="15">11~20</label>
+          <input type="radio" id="age" name="age" value="25"><label for="25">21~30</label>
+          <input type="radio" id="age" name="age" value="35"><label for="35">31~40</label>
+          <input type="radio" id="age" name="age" value="45"><label for="45">41~50</label>
+          <input type="radio" id="age" name="age" value="55"><label for="55">51up</label>
+          <br><br>
+
+          <h2>居住地區</h2>
+          <label for="area"></label>
+          <h4>北部</h4>
+          <input type="radio" id="area" name="area" value="Keelung"><label for="Keelung">基隆</label>
+          <input type="radio" id="area" name="area" value="Taipei"><label for="Taipei">台北</label>
+          <input type="radio" id="area" name="area" value="New Taipei"><label for="New Taipei">新北</label>
+          <input type="radio" id="area" name="area" value="Taoyuan"><label for="Taoyuan">桃園</label>
+          <input type="radio" id="area" name="area" value="Hsinchu"><label for="Hsinchu">新竹</label>
+          <br><br>
+          <h4>中部</h4>
+          <input type="radio" id="area" name="area" value="Miaoli"><label for="Miaoli">苗栗</label>
+          <input type="radio" id="area" name="area" value="Taichung"><label for="Taichung">台中</label>
+          <input type="radio" id="area" name="area" value="Changhua"><label for="Changhua">彰化</label>
+          <input type="radio" id="area" name="area" value="Nantou"><label for="Nantou">南投</label>
+          <input type="radio" id="area" name="area" value="Yunlin"><label for="Yunlin">雲林</label>
+          <br><br>
+          <h4>南部</h4>
+          <input type="radio" id="area" name="area" value="Chiayi"><label for="Chiayi">嘉義</label>
+          <input type="radio" id="area" name="area" value="Tainan"><label for="Tainan">台南</label>
+          <input type="radio" id="area" name="area" value="Kaohsiung"><label for="Kaohsiung">高雄</label>
+          <input type="radio" id="area" name="area" value="Pingtung"><label for="Pingtung">屏東</label>
+          <br><br>
+          <h4>東部</h4>
+          <input type="radio" id="area" name="area" value="Yilan"><label for="Yilan">宜蘭</label>
+          <input type="radio" id="area" name="area" value="Hualien"><label for="Hualien">花蓮</label>
+          <input type="radio" id="area" name="area" value="Taitung"><label for="Taitung">台東</label>
+          <br><br>
+
+          <h2>你平常會幾點去逛夜市</h2>
+          <label for="time"></label>
+          <input type="radio" id="time" name="time" value="17"><label for="17">16:00~18:00</label>
+          <br><br>
+          <input type="radio" id="time" name="time" value="19"><label for="19">18:00~20:00</label>
+          <br><br>
+          <input type="radio" id="time" name="time" value="21"><label for="21">20:00~22:00</label>
+          <br><br>
+          <input type="radio" id="time" name="time" value="23"><label for="23">22:00~00:00</label>
+          <br><br>
+          <input type="radio" id="time" name="time" value="01"><label for="01">00:00~02:00</label>
+          <br><br>
+          <input type="radio" id="time" name="time" value="03"><label for="03">02:00~04:00</label>
+          <br><br>
+        
+          <h2>你最喜歡下列哪間夜市</h2>
+          <label for="nightmarket"></label>
+          <h4>北部</h4>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Miaokou_nm"><label for="Miaokou_nm">廟口夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Shilin_nm"><label for="Shilin_nm">士林夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Ningxia_nm"><label for="Ningxia_nm">寧夏夜市</label>
+          <br><br>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Nanya_nm"><label for="Nanya_nm">湳雅夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Linjiang_nm"><label for="Linjiang_nm">臨江夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="HuaxiStreet_nm"><label for="HuaxiStreet_nm">華西街夜市</label>         
+          <input type="radio" id="nightmarket" name="nightmarket" value="Raohe_nm"><label for="Raohe_nm">饒河夜市</label>       
+          <br><br>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Taoyuan_nm"><label for="Taoyuan_nm">桃園夜市</label>   
+          <input type="radio" id="nightmarket" name="nightmarket" value="Zhongyuan_nm"><label for="Zhongyuan_nm">中原夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Zhongli_nm"><label for="Zhongli_nm">中壢夜市</label>   
+          <input type="radio" id="nightmarket" name="nightmarket" value="ChenghuangTemple_nm"><label for="ChenghuangTemple_nm">城隍廟夜市</label>     
+          <br><br>
+          
+          <h4>中部</h4>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Yizhong_nm"><label for="Yizhong_nm">一中街夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Fengchia_nm"><label for="Fengchia_nm">逢甲夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Jingcheng_nm"><label for="Jingcheng_nm">精誠夜市</label>
+          <br><br>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Longden_nm"><label for="Longden_nm">龍燈夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Huwei_nm"><label for="Huwei_nm">虎尾夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Caoxiedun_nm"><label for="Caoxiedun_nm">草鞋墩夜市</label>
+          <br><br>
+
+          <h4>南部</h4>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Chialehu_nm"><label for="Chialehu_nm">嘉樂福夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Wenhua_nm"><label for="Wenhua_nm">文化路夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Flower_nm"><label for="Flower_nm">花園夜市</label>
+          <br><br>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Ruifeng"><label for="Ruifeng">瑞豐夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Liuhe_nm"><label for="Liuhe_nm">六合夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="KentingStreet_nm"><label for="KentingStreet_nm">墾丁大街夜市</label>
+          <br><br>
+
+
+          <h4>東部</h4>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Luodong_nm"><label for="Luodong_nm">羅東夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Dongdaemun_nm"><label for="Dongdaemun_nm">東大門夜市</label>
+          <input type="radio" id="nightmarket" name="nightmarket" value="Taitung_nm"><label for="Taitung_nm">台東夜市</label>
+
+
+          <br><br>
+
+          <h2>關於該夜市相關問題 1~5 分，分數越高評價越高</h2>
+          <label for="tidy">你認為該夜市的整潔度</label>
+          <input type="radio" id="tidy" name="tidy" value="1"><label for="1">1</label>
+          <input type="radio" id="tidy" name="tidy" value="2"><label for="2">2</label>
+          <input type="radio" id="tidy" name="tidy" value="3"><label for="3">3</label>
+          <input type="radio" id="tidy" name="tidy" value="4"><label for="4">4</label>
+          <input type="radio" id="tidy" name="tidy" value="5"><label for="5">5</label>
+          <br><br>
+
+          <label for="food">你認為該夜市食物的好吃程度</label>
+          <input type="radio" id="food" name="food" value="1"><label for="1">1</label>
+          <input type="radio" id="food" name="food" value="2"><label for="2">2</label>
+          <input type="radio" id="food" name="food" value="3"><label for="3">3</label>
+          <input type="radio" id="food" name="food" value="4"><label for="4">4</label>
+          <input type="radio" id="food" name="food" value="5"><label for="5">5</label>
+          <br><br>
+
+          <label for="price">你認為該夜市價格是否合理</label>
+          <input type="radio" id="price" name="price" value="1"><label for="1">1</label>
+          <input type="radio" id="price" name="price" value="2"><label for="2">2</label>
+          <input type="radio" id="price" name="price" value="3"><label for="3">3</label>
+          <input type="radio" id="price" name="price" value="4"><label for="4">4</label>
+          <input type="radio" id="price" name="price" value="5"><label for="5">5</label>
+          <br><br>
+
+          <label for="traffic">你認為該夜市交通是否方便</label>
+          <input type="radio" id="traffic" name="traffic" value="1"><label for="1">1</label>
+          <input type="radio" id="traffic" name="traffic" value="2"><label for="2">2</label>
+          <input type="radio" id="traffic" name="traffic" value="3"><label for="3">3</label>
+          <input type="radio" id="traffic" name="traffic" value="4"><label for="4">4</label>
+          <input type="radio" id="traffic" name="traffic" value="5"><label for="5">5</label>
+          <br><br>
+
+          <label for="ent">你認為該夜市除了食物有玩樂的項目</label>
+          <input type="radio" id="ent" name="ent" value="1"><label for="1">1</label>
+          <input type="radio" id="ent" name="ent" value="2"><label for="2">2</label>
+          <input type="radio" id="ent" name="ent" value="3"><label for="3">3</label>
+          <input type="radio" id="ent" name="ent" value="4"><label for="4">4</label>
+          <input type="radio" id="ent" name="ent" value="5"><label for="5">5</label>
+          <br><br>
+
+          <h2>你最重視夜市的哪項特質</h2>
+          <label for="trait"></label>
+          <input type="radio" id="trait" name="trait" value="clean"><label for="clean">環境整潔</label>
+          <input type="radio" id="trait" name="trait" value="delicious"><label for="delicious">食物美味</label>
+          <input type="radio" id="trait" name="trait" value="cheap"><label for="cheap">價格便宜</label>
+          <input type="radio" id="trait" name="trait" value="convenience"><label for="convenience">交通方便</label>
+          <input type="radio" id="trait" name="trait" value="fun"><label for="fun">有玩樂設施</label>
+          <br><br>
+
+          <h2>對該夜市是否有其他評價</h2>
+          <label for="comment"></label>
+          <input type="text" id="comment" name="comment">
+
+          <br><br>
+          <br><br>
+          <input type="submit" value="submit">
+          <br><br>
+          <br><br>
+        </form>
+        <br>
+        <div>
+            <p><3</p>
+        </div>
+      </div>
+</body>
+
+</html>
