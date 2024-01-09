@@ -3,14 +3,14 @@ let dotchart = document.getElementById('dotchart');
 
 
 
-d3.json('nm_graph/db_server/db.json').then(
+d3.json('db_server/db.json').then(
     res=>{
-        get_json_dotdata(res)
+        get_json_data(res)
         console.log("rows")
     }
 );
 
-function get_json_dotdata(ddd){
+function get_json_data(ddd){
     var rows = ddd.records;
     console.log(rows)
     
@@ -48,7 +48,7 @@ function get_json_dotdata(ddd){
     }
     console.log("account", account)
 
-    var dottrace1 = {
+    var trace1 = {
         x: nightmarket_chinese,
         y: account,
         //text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
@@ -85,11 +85,11 @@ function get_json_dotdata(ddd){
         }
     };
       
-    let dotdata =[];
-    dotdata.push(dottrace1);
-    console.log(dottrace1);
+    let data =[];
+    data.push(trace1);
+    console.log(trace1);
 
-    let dotlayout = {
+    let layout = {
         title: '夜市拜訪人數',
         titlefont :{
             family: 'Arial',
@@ -99,7 +99,7 @@ function get_json_dotdata(ddd){
         xaxis: {
             //linecolor: 'rgb(31,5,120)',
             tickfont:{
-                size :20,
+                size :12,
                 color : 'rgb (0,0,0)'
             }
         },
@@ -111,10 +111,10 @@ function get_json_dotdata(ddd){
             }
         },
         showlegend: false,
-        width: 3300,
+        width: 2000,
         height: 1100,
         
     };
 
-    Plotly.newPlot(dotchart, dotdata, dotlayout);
+    Plotly.newPlot(dotchart, data, layout);
 }

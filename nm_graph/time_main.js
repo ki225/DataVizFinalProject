@@ -2,14 +2,14 @@ let timechart = document.getElementById('timechart');
 
 
 
-d3.json('nm_graph/db_server/db.json').then(
+d3.json('db_server/db.json').then(
     res=>{
-        get_json_timedata(res)
+        get_json_data(res)
         console.log("rows")
     }
 );
 
-function get_json_timedata(ddd){
+function get_json_data(ddd){
     var rows = ddd.records;
     console.log(rows)
 
@@ -42,11 +42,11 @@ function get_json_timedata(ddd){
         line: {color: '#17BECF'}
     }
 
-    let timedata =[];
-    timedata.push(trace1);
+    let data =[];
+    data.push(trace1);
     console.log(trace1);
 
-    var timelayout = {
+    var layout = {
         title: 'Nightmarket popular Time',
         titlefont :{
             family: 'Arial',
@@ -66,9 +66,9 @@ function get_json_timedata(ddd){
                 color : 'rgb (0,0,0)'
             }
         },
-        width: 1100,
+        width: 2000,
         height: 1100
     };
     
-    Plotly.newPlot(timechart, timedata, timelayout);
+    Plotly.newPlot(timechart, data, layout);
 }

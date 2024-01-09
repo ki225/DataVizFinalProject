@@ -1,8 +1,8 @@
 let sunburst_chart = document.getElementById("sunburst_chart");
 
-d3.json('nm_graph/db_server/db.json').then(
+d3.json('db_server/db.json').then(
     res=>{
-        getJSON_sunburst_data(res)
+        getJSON_data(res)
         console.log('Local json:',res)
     }
 );
@@ -27,7 +27,7 @@ let nightmarkets_score_average = Array(26).fill(0);
 
 let score = ["tidy", "food", "price", "traffic", "ent"];
 
-function getJSON_sunburst_data(ddd){
+function getJSON_data(ddd){
     var rows = ddd.records;
 
     let sunburst_trace = {
@@ -140,11 +140,11 @@ function getJSON_sunburst_data(ddd){
         summ += sunburst_trace.values[i];
     }
     
-    let sunburst_layout = {
+    let layout = {
         "margin": {"l": 0, "r": 0, "b": 0, "t": 0},
     };
 
-    Plotly.newPlot(sunburst_chart, [sunburst_trace], sunburst_layout, {showSendToCloud: true});
+    Plotly.newPlot(sunburst_chart, [sunburst_trace], layout, {showSendToCloud: true});
 
     console.log('Local json:',sunburst_trace)
 }
