@@ -50,9 +50,7 @@
           <li><a class="nav-link scrollto active" href="#home">首頁</a></li>
           <li><a class="nav-link scrollto" href="#about">動機</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">區域選擇</a></li>
-          <li><a class="nav-link scrollto" href="#chart">統計圖表</a></li>
-          <li><a class="nav-link scrollto" href="#team">團隊</a></li>
-          <li class="dropdown"><a href="#"><span>Nightmarket Menu</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#portfolio"><span>Nightmarket Menu</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>北部</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -72,11 +70,11 @@
               <li class="dropdown"><a href="#"><span>中部</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="/一中街夜市.html">一中街夜市</a></li>
-                  <li><a href="/逢甲夜市.html">夜市</a></li>
-                  <li><a href="/精誠夜市.html">夜市</a></li>
-                  <li><a href="/龍燈夜市.html">夜市</a></li>
-                  <li><a href="/虎尾夜市.html">夜市</a></li>
-                  <li><a href="/草鞋墩夜市.html">夜市</a></li>
+                  <li><a href="/逢甲夜市.html">逢甲夜市</a></li>
+                  <li><a href="/精誠夜市.html">精誠夜市</a></li>
+                  <li><a href="/龍燈夜市.html">龍燈夜市</a></li>
+                  <li><a href="/虎尾夜市.html">虎尾夜市</a></li>
+                  <li><a href="/草鞋墩夜市.html">草鞋墩夜市</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>南部</span> <i class="bi bi-chevron-right"></i></a>
@@ -98,6 +96,8 @@
               </li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto" href="#chart">統計圖表</a></li>
+          <li><a class="nav-link scrollto" href="#team">團隊</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -171,7 +171,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= chart01 Section ======= -->
+    <!-- ======= chart0 Section ======= -->
     <section id="chart01_discribe" class="chart01_discribe">
       <div class="container">
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
@@ -208,25 +208,40 @@
       </div>
     </section>
     
-        
+        <!-- ======= chart1 Section ======= -->
           <div class="container">
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
               <h2>台灣夜市搜尋程度圖表介紹</h2>
               <p>
-                
+                下列圖表比較台灣人過去一年裡，於Google搜尋引擎搜尋不同夜市的搜尋量比較結果，其中數值正比於搜尋次數。
               </p>
             </div>
 
     <section id="chart01" class="chart01">
-    
+      
+   
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <div id= "myDiv"></div>
+          <div class = "flex-chart00">
+            <div class = "item2">
+              <p>  </p>
+              <p><i class="bx bx-bar-chart-square bx-md"></i>由左下方氣泡地圖可以得知台灣民眾熱門搜尋夜市位於何處，將氣泡地圖放大可以得知該夜市確切的地理位置。</p>
+              <p><i class="bx bx-bar-chart-square bx-md"></i>由右下方的圓餅圖可以發現在2023/01/08到2023/12/31期間，「寧夏夜市」、「花園夜市」、「士林夜市」、「逢甲夜市」、「饒河夜市」分別為統計夜市中的前五名，和「2019~2021旅客遊覽夜市票數排名」的前五名有四個相同，由此可知這四個夜市仍受大眾喜愛。</p>
             </div>
-            <div class="col">
-              <div id= "myPieDiv" style="display:block;margin:0 auto;" ></div>
+          </div>
+
+          <div class="flex-chart00">
+            <div class="item">
+              <div id = "myDiv"></div>
             </div>
+            <div class="item">
+              <div id = "myPieDiv"></div>
+            </div>
+          </div>
+
+          <div class = "item2">
+            <p>  </p>
+            <p><i class="bx bx-bar-chart-square bx-md"></i>由下方折線圖可知，在2023/01/23當週是搜尋相關夜市關鍵詞的高峰，其中又以花園夜市為高峰。</p>
+            <p><i class="bx bx-bar-chart-square bx-md"></i>折線圖下方可對圖表進行區間調整，將資料侷限在特定時間範圍，以便觀察。</p>
           </div>        
             <div id= "myLineChart"></div>
 
@@ -583,6 +598,10 @@
     <br></br>
     <br></br>
 
+    <div id="piechart"></div>
+    <br></br>
+    <br></br>
+
     <center><h3>夜市拜訪人數</h3></center>
     <div id="dotchart"></div>
 
@@ -599,10 +618,7 @@
     <br></br>
     <div id="sunburst_chart"></div>
 
-    <br></br>
-    <br></br>
-
-    <div id="piechart"></div>
+    
     </section>
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
