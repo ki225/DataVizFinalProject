@@ -23,6 +23,9 @@
   <!-- 主css -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- CSS BY PY -->
+  <link href="chart0/style.css" rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: Squadfree
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -152,9 +155,12 @@
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
             <div class="content">
-              <h3>為何我們要選擇調查夜市呢？</h3>
+              <h3>為何我們要選擇調查夜市呢<i class="bx bx-question-mark bx-tada bx-lg"></i></h3>
               <p>
-                our reason?
+                根據交通部觀光署每年年中產出的前一年的<a href="https://admin.taiwan.net.tw/businessinfo/FilePage?a=14693">來臺旅客消費及動向調查報告</a>，根據調查在106年至110年以來，歷年受訪旅客遊覽觀光景點排名第一都是夜市，可見夜市在來台旅客中占了不小的「地位」。
+              </p>
+              <p>
+                而對在地人來說，夜市更是乘載了許多人的兒時回憶或是與家人朋友的休閒時光，是平日下班下課後、假日休憩娛樂時的好去處！
               </p>
               
               <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
@@ -166,27 +172,27 @@
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <i class="bx bx-trophy"></i>
+                  <h4>旅客最愛第一名</h4>
+                  <p>阿真實數據這樣顯示咩，就是剛剛提到的來臺旅客消費及動向調查，好啦，不光是觀光客，在地人也很喜歡喔！</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <i class="bx bx-child"></i>
+                  <h4>貼近日常生活</h4>
+                  <p>在各個縣市都有大大小小的夜市，也許不會常常光顧，但一定有看過！</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <i class="bx bx-chart"></i>
+                  <h4>易於視覺化</h4>
+                  <p>除了旅客的投票人次外，還有許多夜市飲食娛樂的相關數據可以用圖表呈現，也可以發現一些有趣的現象</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                  <i class='bx bx-loader bx-spin'></i>
+                  <h4>選擇困難症</h4>
+                  <p>不知道該去哪個夜市逛逛嗎，來這裡看看吧！</p>
                 </div>
               </div>
-            </div>
+            </div><!-- End .content-->
           </div>
         </div>
 
@@ -195,6 +201,41 @@
 
     <!-- ======= chart01 Section ======= -->
     <section id="chart01_discribe" class="chart01_discribe">
+      <div class="container">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>台灣觀光景點排名圖表(108-110年)</h2>
+          <p>
+            資料來源: <a href="https://admin.taiwan.net.tw/businessinfo/FilePage?a=14693">交通部觀光署來臺旅客消費及動向調查報告</a>
+          </p>
+        </div>
+      </div>
+      <div class="flex-chart00">
+        
+        <div class="item">
+          <p><i class="bx bx-bulb bx-md"></i>右圖為根據交通部觀光署提出的2019年-2021年報告書中，依受訪旅客曾遊覽過印象較深刻之景點整理出的排名表中，各年各分類之前四名的景點，由圖可知，無論是哪一年的哪一個季度，夜市的排行總在首位。</p>
+          <p><i class="bx bx-bulb bx-md"></i>而2019-2021的總調查人數分別為8562、3987、2876人，隨著疫情的影響，來台人數及調查皆有缺失，但依舊無法撼動夜市的地位</p>
+        </div>
+        <div class="item">
+          <div id = "no1_graph"></div>
+        </div>
+      </div>
+      <div class = "flex-chart00">
+        <div class = "item2">
+          <p>  </p>
+          <p><i class="bx bx-bar-chart-square bx-md"></i>下左圖為三年中最熱門的五個夜市，其各年的票數，我們可以看見，各年的首位皆是士林夜市。2019票數與2020及2021相差甚大原因為疫情。</p>
+          <p><i class="bx bx-bar-chart-square bx-md"></i>為便於觀察，我們將左圖的人次換為相對人次，即右圖，亦為每100人次中有幾人投票給該夜市，綜合兩圖，可見士林夜市為旅客間之最熱門夜市</p>
+        </div>
+      </div>
+      <div class="flex-chart00">
+        <div class="item">
+          <div id = "rank_graph"></div>
+        </div>
+        <div class="item">
+          <div id = "rank2_graph"></div>
+        </div>
+      </div>
+    </section>
+    
         
           <div class="container">
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
@@ -275,7 +316,7 @@
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>區域選擇</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>來挑選想看的夜市，點進去看詳細資料！</p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -841,8 +882,8 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li> -->
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
@@ -883,7 +924,9 @@
   <script src="chart1/data/data.json"></script>
   <script src="chart1/data/data02.json"></script>
   <script src="chart1/data/data03.json"></script>
-  
+  <script src="chart0/sun.js"></script>
+  <script src="chart0/bar01.js"></script>
+  <script src="chart0/bar02.js"></script>
   <!--script src="chart1/data/nm_coordinate.json"></script-->
   <script src="chart1/main.js"></script>
   <script src="chart1/line_chart.js"></script>
