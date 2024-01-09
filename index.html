@@ -35,7 +35,7 @@
   ======================================================== -->
 </head>
 
-<body onload="get_data_num()">    
+<body onload="get_comment()">  
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
@@ -50,6 +50,7 @@
           <li><a class="nav-link scrollto active" href="#home">首頁</a></li>
           <li><a class="nav-link scrollto" href="#about">動機</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">區域選擇</a></li>
+          <li><a class="nav-link scrollto" href="#chart">統計圖表</a></li>
           <li><a class="nav-link scrollto" href="#team">團隊</a></li>
           <li class="dropdown"><a href="#"><span>Nightmarket Menu</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -97,35 +98,6 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown megamenu"><a href="#"><span>Nightmarket Menu</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li>
-                <strong>北部</strong>
-                <a href="/廟口夜市.html">廟口夜市</a>
-                <a href="/士林夜市.html">士林夜市</a>
-              </li>
-              <li>
-                <strong>中部</strong>
-                <a href="/一中街夜市.html">一中街夜市</a>
-                <a href="/逢甲夜市.html">夜市</a>
-              
-              </li>
-              <li>
-                <strong>南部</strong>
-                <a href="/嘉樂福夜市.html">嘉樂福夜市</a>
-                <a href="/文化夜市.html">文化路夜市</a>
-                <a href="/花園夜市.html">花園夜市</a>
-              </li>
-              <li>
-                <strong>東部</strong>
-                <a href="/羅東夜市.html">羅東夜市</a>
-                <a href="/東大門夜市.html">東大門夜市</a>
-                <a href="/台東夜市.html">台東夜市</a>
-              </li>
-              
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="voting_form/templates/form.html">表單填寫</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -240,10 +212,10 @@
           <div class="container">
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
               <h2>台灣夜市搜尋程度圖表介紹</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              <p>
+                
+              </p>
             </div>
-      
-      
 
     <section id="chart01" class="chart01">
     
@@ -257,10 +229,6 @@
             </div>
           </div>        
             <div id= "myLineChart"></div>
-        
-      </section>
-      
-     
 
     </section>
    
@@ -604,13 +572,45 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+    <section id="chart">
+      <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+        <h2>統計圖表</h2>
+        <p></p>
+      </div>
+    <center><h3>逛夜市時間</h3></center>
+    <div id="timechart"></div>
+
+    <br></br>
+    <br></br>
+
+    <center><h3>夜市拜訪人數</h3></center>
+    <div id="dotchart"></div>
+
+    <br></br>
+    <br></br>
+
+    <center><h3>夜市戰力指數</h3></center>
+    <div id="radarchart"></div>
+   
+    <br></br>
+    <br></br>
+
+    <center><h3>總表</h3></center>
+    <br></br>
+    <div id="sunburst_chart"></div>
+
+    <br></br>
+    <br></br>
+
+    <div id="piechart"></div>
+    </section>
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>看看其他人怎麼說</h2>
-          <p>底下應該會放一些表單回饋的敘述，啊這邊看你們發揮</p>
+          <p></p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -620,66 +620,79 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  地瓜球便宜又好吃，還有羊肉羹和羊肉麵也很推薦                  
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                </p>               
+                <img src="assets/img/testimonials/anonymous1.jpg" class="testimonial-img" alt="">
+                <h3>匿名地瓜球</h3>
+                <h4>桃園夜市</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  臭薯條好吃，再加上奶凍捲超讚！！！一定要買奶凍捲！！！           
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                </p>   
+                <img src="assets/img/testimonials/anonymous2.jpg" class="testimonial-img" alt="">
+                <h3>匿名奶凍捲</h3>
+                <h4>羅東夜市</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  碳烤雞排一生推         
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <img src="assets/img/testimonials/anonymous3.jpg" class="testimonial-img" alt="">
+                <h3>匿名碳烤雞排</h3>
+                <h4>精誠夜市</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  烤布蕾好吃        
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <img src="assets/img/testimonials/anonymous4.jpg" class="testimonial-img" alt="">
+                <h3>匿名烤布蕾</h3>
+                <h4>中原夜市</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  我大一中街肯定是最棒的       
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <img src="assets/img/testimonials/anonymous5.jpg" class="testimonial-img" alt="">
+                <h3>匿名綠豆沙牛奶</h3>
+                <h4>一中街夜市</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  店越破越好吃，貢丸好吃還可以騎      
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/anonymous6.jpg" class="testimonial-img" alt="">
+                <h3>匿名貢丸</h3>
+                <h4>城隍廟夜市</h4>
+              </div>
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
@@ -694,23 +707,20 @@
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>我們的團隊</h2>
-          <p>巴拉巴拉，會放照片跟名字還有你們想說的話，也可以放想丟的連結，但上排的人只能擇一，不然會被下面的照片擋住</p>
         </div>
 
         <div class="row">
 
+
+
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up">
-              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/yuan.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>邱郁安</h4>
+                <span>組長</span>
                 <div class="social">
-                  <p>更多想說的</p>
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <p>下次染粉紅色</p>
                 </div>
               </div>
             </div>
@@ -718,16 +728,12 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="150">
-              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/wushin.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>吳欣瑜</h4>
+                <span>組員</span>
                 <div class="social">
-                  <p>更多想說的</p>
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <p>我不是烏梅汁</p>
                 </div>
               </div>
             </div>
@@ -735,16 +741,12 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/77.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>黃詠綺</h4>
+                <span>組員</span>
                 <div class="social">
-                  <p>更多想說的</p>
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <p>不要一直來喝御香屋</p>
                 </div>
               </div>
             </div>
@@ -756,16 +758,12 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up">
-              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/shooting.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>張舒婷</h4>
+                <span>組員</span>
                 <div class="social">
-                  <p>更多想說的</p>
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <p>床癌末期</p>
                 </div>
               </div>
             </div>
@@ -773,33 +771,26 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="150">
-              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/py.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>曹佩怡</h4>
+                <span>組員</span>
                 <div class="social">
-                  <p>更多想說的</p>
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <p>站起來</p>
                 </div>
               </div>
             </div>
           </div>
 
+          
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/sabrina.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>吳云綺</h4>
+                <span>組員</span>
                 <div class="social">
-                  <p>更多想說的</p>
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <p>Hi~</p>
                 </div>
               </div>
             </div>
@@ -915,6 +906,10 @@
     </div>
   </footer><!-- End Footer -->
 
+  
+    
+    
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -940,7 +935,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="nm_graph/dot_main.js"></script>
+  <script src="nm_graph/radar_main.js"></script>
+  <script src="nm_graph/sunburst_main.js"></script>
+  <script src="nm_graph/time_main.js"></script>
+  <script src="nm_graph/pie_main.js"></script>
+  <script src="nm_graph/comment.js"></script>
 </body>
 
 </html>
