@@ -26,15 +26,15 @@ d3.json('chart1/data/data02.json').then(
     }
 );
 
-function get_data_num(){
-    d3.json(dataURL).then(
-        raw_data=>{
-            var data_num=raw_data.length
-            document.getElementById('data_num').innerHTML = data_num;
-        }
-    )
+// function get_data_num(){
+//     d3.json(dataURL).then(
+//         raw_data=>{
+//             var data_num=raw_data.length
+//             document.getElementById('data_num').innerHTML = data_num;
+//         }
+//     )
     
-}
+// }
 
 
 
@@ -79,7 +79,7 @@ function get_json_data(rows){//coordinates
             //console.log(coordinates_list[0][0])
             //trace_bubble.lat.push(co_lat);
             trace_bubble.lat.push(corordinates_lat[j]);
-            trace_bubble.lat.push(corordinates_lon[j]);
+            trace_bubble.lon.push(corordinates_lon[j]);
      
             trace_bubble.marker.size.push(5*Math.sqrt(rows[0][all_nm[j]]));
             trace_pie.values.push(rows[0][all_nm[j]]);
