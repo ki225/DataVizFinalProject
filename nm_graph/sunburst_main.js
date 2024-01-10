@@ -11,7 +11,7 @@ let nightmarkets = [
     "Miaokou_nm", "Shilin_nm", "Ningxia_nm", "Nanya_nm", "Linjiang_nm", "HuaxiStreet_nm", "Raohe_nm", "Taoyuan_nm", "Zhongyuan_nm", "Zhongli_nm", "ChenghuangTemple_nm",
     "Yizhong_nm", "Fengchia_nm", "Jingcheng_nm", "Longden_nm", "Huwei_nm", "Caoxiedun_nm",
     "Chialehu_nm", "Wenhua_nm", "Flower_nm", "Ruifeng_nm", "Liuhe_nm", "KentingStreet_nm",
-    "Luodong_nm ", "Dongdaemun_nm", "Taitung_nm"
+    "Luodong_nm", "Dongdaemun_nm", "Taitung_nm"
 ];
 
 let nightmarkets_chinese = [
